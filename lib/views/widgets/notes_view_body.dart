@@ -21,18 +21,19 @@ class _NotesViewBodyState extends State<NotesViewBody> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             children: [
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               CustomAppBar(
+                onPressed: () {},
                 title: 'Notes',
                 icon: Icons.search,
               ),
-              Expanded(child: NotesListView()),
+              const Expanded(child: NotesListView()),
             ],
           ),
         ),
