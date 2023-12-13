@@ -35,15 +35,19 @@ class NotesItem extends StatelessWidget {
             ListTile(
               title: Text(
                 note.title,
-                style: const TextStyle(fontSize: 28, color: Colors.black),
+                style: const TextStyle(
+                    fontSize: 36,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold),
               ),
               subtitle: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 12),
                 child: Text(
                   note.content,
                   style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.black.withOpacity(0.5),
+                    fontSize: 22,
+                    color: Colors.black.withOpacity(0.7),
+                    fontWeight: FontWeight.w500,
                   ),
                 ),
               ),
@@ -63,8 +67,8 @@ class NotesItem extends StatelessWidget {
               child: Text(
                 note.date,
                 style: TextStyle(
-                  color: Colors.black.withOpacity(0.5),
-                ),
+                    color: Colors.black.withOpacity(0.5),
+                    fontWeight: FontWeight.w600),
               ),
             ),
           ],
